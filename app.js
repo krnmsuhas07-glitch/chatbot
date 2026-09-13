@@ -105,8 +105,6 @@ btn.addEventListener("click", function () {
     let input = document.querySelector("input");
     usermessage = input.value;
     input.value = "";
-    let oldiv = document.querySelector(".suggestions-box");
-    oldiv.remove();
     let newdiv = document.createElement("div");
     let p = document.createElement("p");
     p.textContent = usermessage;
