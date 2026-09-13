@@ -83,7 +83,7 @@ for (let i = 0; i < boxbtns.length; i++) {
             let p = document.createElement("p");
             let img = document.createElement("img");
             img.className = "avatar";
-            img.src = "gemini-chatbot-logo.svg";
+            img.src = "chatbot-logo.svg";
             p.textContent = "just sec...";
             p.className = "bottext";
             newdivbot.appendChild(img);
@@ -126,7 +126,7 @@ btn.addEventListener("click", function () {
         let p = document.createElement("p");
         let img = document.createElement("img");
         img.className = "avatar";
-        img.src = "gemini-chatbot-logo.svg";
+        img.src = "chatbot-logo.svg";
         p.textContent = "just sec...";
         p.className = "bottext";
         newdivbot.appendChild(img);
