@@ -98,13 +98,19 @@ for (let i = 0; i < boxbtns.length; i++) {
 
     })
 }
-
+let i = 0;
 let btn = document.getElementById("send-arrow");
 btn.addEventListener("click", function () {
     let usermessage = "";
     let input = document.querySelector("input");
     usermessage = input.value;
     input.value = "";
+    if (i == 0) {
+        let oldiv = document.querySelector(".suggestions-box");
+        oldiv.remove();
+        i = i + 1;
+    }
+
     let newdiv = document.createElement("div");
     let p = document.createElement("p");
     p.textContent = usermessage;
